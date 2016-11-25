@@ -15,8 +15,17 @@ public class FestividadEntity implements Serializable {
     private String lugar;
     private String clima;
     private String altitud;
+    private int categoryId;
 
-    public FestividadEntity(int id, String nombre, int photo, String descripcion, String fecha, String lugar, String clima, String altitud) {
+    public int getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(int categoryId) {
+        this.categoryId = categoryId;
+    }
+
+    /*public FestividadEntity(int id, String nombre, int photo, String descripcion, String fecha, String lugar, String clima, String altitud) {
         this.id = id;
         this.nombre = nombre;
         this.photo = photo;
@@ -25,6 +34,18 @@ public class FestividadEntity implements Serializable {
         this.lugar = lugar;
         this.clima = clima;
         this.altitud = altitud;
+    }*/
+
+    public FestividadEntity(int id, String nombre, int photo, String descripcion, String fecha, String lugar, String clima, String altitud, int categoryId) {
+        this.id = id;
+        this.nombre = nombre;
+        this.photo = photo;
+        this.descripcion = descripcion;
+        this.fecha = fecha;
+        this.lugar = lugar;
+        this.clima = clima;
+        this.altitud = altitud;
+        this.categoryId = categoryId;
     }
 
     public FestividadEntity() {

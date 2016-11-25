@@ -24,19 +24,25 @@ public class FestRepository {
         String ndate= ""+calendar.getTime();
 
         FestividadEntity festividad1= new FestividadEntity(1,"Fiestas Patrias",R.drawable.fest11_200x200,"Fiestas patrias del Perú",
-                "Del 28 al 29 de julio","Todo pais","Nublado","10 m.s.n.m.");
+                "Del 28 al 29 de julio","Todo pais","Nublado","10 m.s.n.m.",1);
         FestividadEntity festividad2= new FestividadEntity(2,"Aniversario del distrito de Barranco",R.drawable.fest11_200x200,
                 "En el marco por el aniversario del distrito de Barranco, la municipalidad prepara un listado de actividades para festejar a lo grande esta fecha especial.",
-                "Del 14 al 30 de octubre","Lima","Nublado","10 m.s.n.m.");
+                "Del 14 al 30 de octubre","Lima","Nublado","10 m.s.n.m.",1);
 
         FestividadEntity festividad3= new FestividadEntity(3,"148° Aniversario de Creación Política y 55° Semana Turística de Chincha",
                 R.drawable.fest11_200x200,
                 "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
-                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.");
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",1);
+
+        FestividadEntity festividad4= new FestividadEntity(4,"148° Aniversario de Creación Política y 55° Semana Turística de Chincha",
+                R.drawable.fest11_200x200,
+                "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",2);
 
         festividad.add(festividad1);
         festividad.add(festividad2);
         festividad.add(festividad3);
+        festividad.add(festividad4);
 
     }
 
