@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">AppProject</string>
+    <string name="login">Iniciar Sesión</string>
+    <string name="btnRecuperar">Olvido Contraseña</string>
+    <string name="registrarse">Registrarse</string>
+    <string name="terminos">Terminos de servicio</string>
+    <string name="tipo1">Cívicas</string>
+    <string name="tipo2">Religiosas</string>
+    <string name="tipo3">Departamento</string>
+    <string name="tipo4">Mes</string>
+    <string name="tipo5">Gastronomica</string>
+    <string name="tipo6">Favoritos</string>
+    <string name="Fcivica1">Fiesta 1</string>
+    <string name="Fcivica2">Fiesta 2</string>
+    <string name="Fcivica3">Fiesta 3</string>
+    <string name="Fcivica4">Fiesta 4</string>
+    <string name="Fcivica5">Fiesta 5</string>
+    <string name="Fcivica6">Fiesta 6</string>
+    <string name="Descripcion1">Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum Lorem ipsum </string>
+    <string name="Lugar">Lima</string>
+    <string name="Fecha">28 de Julio</string>
+    <string name="Clima">Nublado</string>
+
+</resources>

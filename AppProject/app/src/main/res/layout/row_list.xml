@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="14dp"
+    android:background="#ffffff"
+    >
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+
+        android:layout_width="wrap_content"
+        android:padding="5dp"
+        android:gravity="center_vertical"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Festividad"
+            android:layout_marginLeft="15dp"
+            android:textSize="25sp"
+            android:textStyle="bold"
+            android:textColor="#000000"
+            android:id="@+id/tviNombre" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="15dp"
+            android:gravity="center_vertical"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Descripcion"
+                android:textSize="20sp"
+                android:textColor="#D1512F"
+                android:id="@+id/tviDesc"
+                android:layout_weight="1"
+
+                />
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:minHeight="25dp"
+                android:layout_gravity="center"
+                android:adjustViewBounds="true"
+                android:src="@drawable/f_civicas"
+                android:visibility="gone"
+                android:id="@+id/iviFoto" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+
+                android:layout_marginTop="5dp"
+                tools:text="Fecha"
+                android:textSize="15sp"
+                android:textColor="#000000"
+                android:id="@+id/tviFecha" />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <View
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                tools:text="Lugar"
+                android:gravity="right"
+                android:textColor="#000000"
+                android:layout_marginTop="10dp"
+                android:textSize="15sp"
+                android:id="@+id/tviLugar" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Clima"
+            android:layout_marginLeft="250dp"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:id="@+id/tviClima" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Altitud"
+            android:layout_marginLeft="250dp"
+            android:textColor="#000000"
+            android:visibility="gone"
+            android:id="@+id/tviAltitud" />
+
+    </LinearLayout>
+
+</LinearLayout>
