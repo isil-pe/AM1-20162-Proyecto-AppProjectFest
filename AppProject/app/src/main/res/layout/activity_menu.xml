@@ -17,15 +17,32 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="right|center_vertical"
-        android:background="#80000000">
+        android:background="@color/black">
 
-        <ImageButton
-            android:layout_width="60dp"
+        <RelativeLayout
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:id="@+id/btnMenu"
-            android:src="@drawable/list_img"
-            />
+            android:paddingLeft="10dp"
+            >
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:id="@+id/btnLogo"
+                android:src="@drawable/marca_peru"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_img"
+                android:id="@+id/btnMenu"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
 
     </LinearLayout>
     

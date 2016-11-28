@@ -2,7 +2,7 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#D1512F">
+    android:background="@color/black">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -10,28 +10,47 @@
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:gravity="right|center_vertical"
-        android:background="#80000000">
+        android:background="@color/black">
 
-        <Button
+        <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="140dp"
-            android:layout_marginLeft="30dp"
-            android:text="Festividades"
-            android:textSize="25sp"
-            android:textStyle="bold"
-            android:background="#979090"
-            android:textColor="#ffffff"
-            android:textAllCaps="false"
-            />
+            android:paddingLeft="10dp"
+            >
 
-        <ImageButton
-            android:layout_width="60dp"
-            android:layout_height="wrap_content"
-            android:background="@color/colorPrimary"
-            android:id="@+id/btnMenu"
-            android:src="@drawable/list_img"
-            />
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:id="@+id/btnLogo"
+                android:src="@drawable/marca_peru"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@color/black"
+                android:id="@+id/btnAdd"
+                android:src="@drawable/btn_pulsado"
+                android:layout_marginRight="60dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/list_img"
+                android:id="@+id/btnMenu"
+                android:layout_alignParentRight="true"
+                />
+
+        </RelativeLayout>
+
+
+
+
 
     </LinearLayout>
 
@@ -41,8 +60,7 @@
         android:orientation="vertical"
         android:background="#ffffff"
         android:padding="10dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="16dp"
+
         android:layout_marginBottom="12dp"
         android:layout_marginTop="10dp">
 
@@ -71,6 +89,8 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="16dp"
         android:minHeight="200dp"
         android:scaleType="centerCrop"
         android:id="@+id/iviPlace"/>
