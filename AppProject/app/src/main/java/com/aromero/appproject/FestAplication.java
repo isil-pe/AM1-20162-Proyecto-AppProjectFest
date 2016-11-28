@@ -2,6 +2,7 @@ package com.aromero.appproject;
 
 import android.app.Application;
 
+import com.aromero.appproject.model.FestividadEntity;
 import com.aromero.appproject.storage.CategoryRepository;
 import com.aromero.appproject.storage.FestByCategoryRepository;
 import com.aromero.appproject.storage.FestRepository;
@@ -12,7 +13,8 @@ import com.aromero.appproject.storage.FestRepository;
 public class FestAplication extends Application {
 
     private FestRepository festRepository;
-    //private FestByCategoryRepository festByCategoryRepository;
+    private FestByCategoryRepository festByCategoryRepository;
+    int cat = 0;
     //private CategoryRepository categoryRepository;
 
 
@@ -24,11 +26,12 @@ public class FestAplication extends Application {
         festRepository= new FestRepository();
         festRepository.mock();
 
-        //categoryRepository = new CategoryRepository();
-        //categoryRepository.mock();
+        festByCategoryRepository = new FestByCategoryRepository(festRepository);
+        festByCategoryRepository.getFestByCategory(cat);
 
-        //festByCategoryRepository = new FestByCategoryRepository();
-        //festByCategoryRepository.getFestByCategory();
+
+
+
 
     }
 
@@ -37,7 +40,7 @@ public class FestAplication extends Application {
         return festRepository;
     }
 
-    //public CategoryRepository getPlace2Repository() {
-        //return categoryRepository;
-    //}
+    public FestByCategoryRepository getPlace2Repository() {
+        return festByCategoryRepository;
+    }
 }

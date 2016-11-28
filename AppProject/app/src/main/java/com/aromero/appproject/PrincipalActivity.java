@@ -16,6 +16,7 @@ import android.widget.Toast;
 public class PrincipalActivity extends Activity {
 
     private ImageButton btnMenu, btnFCivicas;
+    int tipo = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,6 +46,15 @@ public class PrincipalActivity extends Activity {
         findViewById(R.id.btnFCivicas).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                tipo = 1;
+                gotoList();
+            }
+        });
+
+        findViewById(R.id.btnFReligiosa).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipo = 2;
                 gotoList();
             }
         });
@@ -55,7 +65,10 @@ public class PrincipalActivity extends Activity {
     }
 
     private void gotoList() {
-        startActivity(new Intent(this,ListActivity.class));
+        //startActivity(new Intent(this,ListActivity.class));
+        Intent intent = new Intent(PrincipalActivity.this, ListActivity.class);
+        intent.putExtra("tipo",tipo);
+        startActivity(intent);
     }
 
     private void gotoFCivicas() {

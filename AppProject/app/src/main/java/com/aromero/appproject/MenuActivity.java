@@ -19,7 +19,7 @@ public class MenuActivity extends Activity {
 
     private ImageButton btnMenu;
     private String[] mStrings = Menu.sMenuStrings;
-
+    private int  tipo = 0;
     private ListView lvMenu;
 
     @Override
@@ -43,7 +43,13 @@ public class MenuActivity extends Activity {
                 showItem(value);
                 if(position==0)
                 {
-                    gotoFCivicas();
+                    tipo = 1;
+                    gotoList();
+                }
+                if(position==1)
+                {
+                    tipo = 2;
+                    gotoList();
                 }
             }
         });
@@ -76,7 +82,10 @@ public class MenuActivity extends Activity {
     /*private void gotoFCivicas() {
         startActivity(new Intent(this,FiestasCivicasActivity.class));
     }*/
-    private void gotoFCivicas() {
-        startActivity(new Intent(this,ListActivity.class));
+    private void gotoList() {
+        //startActivity(new Intent(this,ListActivity.class));
+        Intent intent = new Intent(this, ListActivity.class);
+        intent.putExtra("tipo", tipo);
+        startActivity(intent);
     }
 }

@@ -12,6 +12,7 @@ public class FestByCategoryRepository {
 
     private List<FestividadEntity> festividades;
     private final FestRepository festRepository;
+
     public FestByCategoryRepository(FestRepository festRepository) {
         this.festRepository = festRepository;
         festividades = new ArrayList<FestividadEntity>();

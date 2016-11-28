@@ -18,8 +18,9 @@ import java.util.List;
  */
 public class ListActivity extends AppCompatActivity {
 
-    private ListView lstFest;
+    private ListView lstFest, lstFest2;
     private List<FestividadEntity> festividades;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,8 +60,9 @@ public class ListActivity extends AppCompatActivity {
     }
 
     private void populate() {
-        ListAdapter festAdapter= new ListAdapter(this,festividades );
-        lstFest.setAdapter(festAdapter);
+
+            ListAdapter festAdapter= new ListAdapter(this,festividades );
+            lstFest.setAdapter(festAdapter);
     }
 
     private void gotoPlaceDetail(FestividadEntity festividad) {
@@ -74,7 +76,21 @@ public class ListActivity extends AppCompatActivity {
 
     private void loadData() {
 
-        FestAplication application= (FestAplication)getApplication();
-        this.festividades= application.getPlaceRepository().allFestividades();
+        //FestividadEntity festividadEntity = new FestividadEntity();
+        Bundle datos = this.getIntent().getExtras();
+        int tipo = datos.getInt("tipo");
+        if(tipo ==1)
+        {
+            FestAplication application= (FestAplication)getApplication();
+            //this.festividades= application.getPlaceRepository().allFestividades();
+            this.festividades= application.getPlace2Repository().getFestByCategory(tipo);
+        }
+        if(tipo ==2)
+        {
+            FestAplication application= (FestAplication)getApplication();
+            this.festividades= application.getPlace2Repository().getFestByCategory(tipo);
+        }
+
+
     }
 }
