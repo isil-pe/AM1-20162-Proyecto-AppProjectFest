@@ -50,6 +50,7 @@ public class ListAdapter extends BaseAdapter {
             LayoutInflater inflater = LayoutInflater.from(context);
             v = inflater.inflate(R.layout.row_list, null);
             ViewHolder holder = new ViewHolder();
+            holder.iviPlace = (ImageView)v.findViewById(R.id.iviPlace);
             holder.tviNombre = (TextView) v.findViewById(R.id.tviNombre);
             holder.tviDesc = (TextView) v.findViewById(R.id.tviDesc);
             holder.tviFecha = (TextView) v.findViewById(R.id.tviFecha);
@@ -65,7 +66,7 @@ public class ListAdapter extends BaseAdapter {
             String nombre=entry.getNombre();
             String descripcion= entry.getDescripcion();
             if(descripcion.length()>=DESCLMAX) descripcion= descripcion.substring(0,DESCLMAX)+"...";
-            // holder.iviPlace.setImageResource(entry.getPhoto());
+
             //int ranking = entry.getPhoto();
             //int review=entry.getReviews();
             //int distancia= entry.getDistancia();
@@ -74,7 +75,7 @@ public class ListAdapter extends BaseAdapter {
             String clima=entry.getClima();
             String altitud=entry.getAltitud();
 
-
+            holder.iviPlace.setImageResource(entry.getPhoto());
             holder.tviNombre.setText(nombre);
             holder.tviDesc.setText(descripcion);
 

@@ -26,6 +26,7 @@ public class FestRepository {
         //Fiestas CIVICAS
         FestividadEntity festividad1= new FestividadEntity(1,"Fiestas Patrias",R.drawable.fest11_200x200,"Fiestas patrias del Perú",
                 "Del 28 al 29 de julio","Todo pais","Nublado","10 m.s.n.m.",1);
+
         FestividadEntity festividad2= new FestividadEntity(2,"Aniversario del distrito de Barranco",R.drawable.fest11_200x200,
                 "En el marco por el aniversario del distrito de Barranco, la municipalidad prepara un listado de actividades para festejar a lo grande esta fecha especial.",
                 "Del 14 al 30 de octubre","Lima","Nublado","10 m.s.n.m.",1);

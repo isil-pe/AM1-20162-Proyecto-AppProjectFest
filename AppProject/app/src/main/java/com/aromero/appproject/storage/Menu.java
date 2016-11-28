@@ -6,7 +6,8 @@ package com.aromero.appproject.storage;
 public class Menu {
 
     public static final String[] sMenuStrings = {
-            "Fiestas Cívicas","Fiestas Religiosas","Fiestas por departamento","Fiestas por meses"
+            "Fiestas Cívicas","Fiestas Religiosas","Fiestas por departamento","Fiestas por meses",
+            "Fiestas gastronomicas","Favoritos"
     };
 
 

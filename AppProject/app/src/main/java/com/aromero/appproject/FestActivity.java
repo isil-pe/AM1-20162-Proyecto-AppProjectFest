@@ -44,6 +44,7 @@ public class FestActivity extends AppCompatActivity {
     private void ui() {
         //iviStar1= (ImageView)findViewById(R.id.iviStar1);
         tviNombre= (TextView) findViewById(R.id.tviNombre);
+        iviFoto= (ImageView)findViewById(R.id.iviPlace);
         tviDesc= (TextView) findViewById(R.id.tviDesc);
         tviFecha= (TextView) findViewById(R.id.tviFecha);
         tviLugar= (TextView) findViewById(R.id.tviLugar);
@@ -57,7 +58,7 @@ public class FestActivity extends AppCompatActivity {
         tviDesc.setText(festividades.getDescripcion());
         tviFecha.setText(festividades.getFecha());
         tviLugar.setText(festividades.getLugar());
-        //iviPlace.setImageResource(restaurantes.getPhoto());
+        iviFoto.setImageResource(festividades.getPhoto());
         //tviFecha.setText(""+(restaurantes.getReviews())+" Reviews");
         //tviLugar.setText(""+(restaurantes.getDistancia())+" m");
         tviClima.setText(festividades.getClima());
