@@ -28,11 +28,13 @@ public class MenuActivity extends Activity {
         setContentView(R.layout.activity_menu);
         app();
 
-        lvMenu=(ListView)findViewById(R.id.lvMenu);
 
-        lvMenu.setAdapter(new ArrayAdapter<String>(this,
-                R.layout.my_row_menu, mStrings));
-        lvMenu.setTextFilterEnabled(true);
+            lvMenu=(ListView)findViewById(R.id.lvMenu);
+
+            lvMenu.setAdapter(new ArrayAdapter<String>(this,
+                    R.layout.my_row_menu, mStrings));
+            lvMenu.setTextFilterEnabled(true);
+
 
         //events
         lvMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -49,6 +51,26 @@ public class MenuActivity extends Activity {
                 if(position==1)
                 {
                     tipo = 2;
+                    gotoList();
+                }
+                if(position==2)
+                {
+                    tipo = 3;
+                    gotoList();
+                }
+                if(position==3)
+                {
+                    tipo = 4;
+                    gotoList();
+                }
+                if(position==4)
+                {
+                    tipo = 5;
+                    gotoList();
+                }
+                if(position==5)
+                {
+                    tipo = 6;
                     gotoList();
                 }
             }

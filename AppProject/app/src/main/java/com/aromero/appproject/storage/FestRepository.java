@@ -23,6 +23,7 @@ public class FestRepository {
         Calendar calendar= Calendar.getInstance();
         String ndate= ""+calendar.getTime();
 
+        //Fiestas CIVICAS
         FestividadEntity festividad1= new FestividadEntity(1,"Fiestas Patrias",R.drawable.fest11_200x200,"Fiestas patrias del Perú",
                 "Del 28 al 29 de julio","Todo pais","Nublado","10 m.s.n.m.",1);
         FestividadEntity festividad2= new FestividadEntity(2,"Aniversario del distrito de Barranco",R.drawable.fest11_200x200,
@@ -34,15 +35,56 @@ public class FestRepository {
                 "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
                 "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",1);
 
-        FestividadEntity festividad4= new FestividadEntity(4,"148° Aniversario de Creación Política y 55° Semana Turística de Chincha",
+        //Fiestas RELIGIOSAS
+        FestividadEntity festividad4= new FestividadEntity(4,"Tata Pancho",
                 R.drawable.fest11_200x200,
                 "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
                 "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",2);
+
+        FestividadEntity festividad5= new FestividadEntity(5,"Candelaria",
+                R.drawable.fest11_200x200,
+                "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",2);
+
+        FestividadEntity festividad6= new FestividadEntity(6,"Sr de los milagros",
+                R.drawable.fest11_200x200,
+                "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",2);
+
+        //Fiestas DEPARTAMENTO
+        FestividadEntity festividad7= new FestividadEntity(7,"Aniv. de Puno",
+                R.drawable.fest11_200x200,
+                "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",3);
+
+        //Fiestas MESES
+        FestividadEntity festividad8= new FestividadEntity(8,"Fiesta Enero",
+                R.drawable.fest11_200x200,
+                "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",4);
+
+        //Fiestas GASTRONOMICA
+        FestividadEntity festividad9= new FestividadEntity(9,"De Juane",
+                R.drawable.fest11_200x200,
+                "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",5);
+
+        //Fiestas FAVORITOS
+        FestividadEntity festividad10= new FestividadEntity(10,"148° Aniversario de Creación Política y 55° Semana Turística de Chincha",
+                R.drawable.fest11_200x200,
+                "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",6);
 
         festividad.add(festividad1);
         festividad.add(festividad2);
         festividad.add(festividad3);
         festividad.add(festividad4);
+        festividad.add(festividad5);
+        festividad.add(festividad6);
+        festividad.add(festividad7);
+        festividad.add(festividad8);
+        festividad.add(festividad9);
+        festividad.add(festividad10);
 
     }
 

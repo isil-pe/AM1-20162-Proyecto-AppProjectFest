@@ -15,7 +15,7 @@ import android.widget.Toast;
  */
 public class PrincipalActivity extends Activity {
 
-    private ImageButton btnMenu, btnFCivicas;
+    private ImageButton btnMenu, btnFCivicas, btnFDepartamento;
     int tipo = 0;
 
     @Override
@@ -29,6 +29,7 @@ public class PrincipalActivity extends Activity {
     private void app() {
         btnMenu = (ImageButton) findViewById(R.id.btnMenu);
         btnFCivicas = (ImageButton) findViewById(R.id.btnFCivicas);
+        btnFDepartamento = (ImageButton) findViewById(R.id.btnFDepartamento);
         events();
     }
 
@@ -55,6 +56,38 @@ public class PrincipalActivity extends Activity {
             @Override
             public void onClick(View v) {
                 tipo = 2;
+                gotoList();
+            }
+        });
+
+        findViewById(R.id.btnFDepartamento).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipo = 3;
+                gotoList();
+            }
+        });
+
+        findViewById(R.id.btnFMes).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipo = 4;
+                gotoList();
+            }
+        });
+
+        findViewById(R.id.btnFGastronomica).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipo = 5;
+                gotoList();
+            }
+        });
+
+        findViewById(R.id.btnFavoritos).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                tipo = 6;
                 gotoList();
             }
         });

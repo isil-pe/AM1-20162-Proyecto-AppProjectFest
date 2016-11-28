@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.view.Window;
 import android.widget.AdapterView;
+import android.widget.ImageButton;
 import android.widget.ListView;
 
 import com.aromero.appproject.adapter.ListAdapter;
@@ -18,7 +19,8 @@ import java.util.List;
  */
 public class ListActivity extends AppCompatActivity {
 
-    private ListView lstFest, lstFest2;
+    private ImageButton btnMenu;
+    private ListView lstFest;
     private List<FestividadEntity> festividades;
 
 
@@ -32,6 +34,7 @@ public class ListActivity extends AppCompatActivity {
     }
 
     private void app() {
+        btnMenu = (ImageButton) findViewById(R.id.btnMenu);
         ui();
         events();
     }
@@ -49,6 +52,13 @@ public class ListActivity extends AppCompatActivity {
                 FestividadEntity festividad= (FestividadEntity) adapterView.getAdapter().getItem(position);
                 gotoPlaceDetail(festividad);
 
+            }
+        });
+
+        findViewById(R.id.btnMenu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoMenuList();
             }
         });
     }
@@ -91,6 +101,34 @@ public class ListActivity extends AppCompatActivity {
             this.festividades= application.getPlace2Repository().getFestByCategory(tipo);
         }
 
+        if(tipo ==3)
+        {
+            FestAplication application= (FestAplication)getApplication();
+            this.festividades= application.getPlace2Repository().getFestByCategory(tipo);
+        }
 
+        if(tipo ==4)
+        {
+            FestAplication application= (FestAplication)getApplication();
+            this.festividades= application.getPlace2Repository().getFestByCategory(tipo);
+        }
+
+        if(tipo ==5)
+        {
+            FestAplication application= (FestAplication)getApplication();
+            this.festividades= application.getPlace2Repository().getFestByCategory(tipo);
+        }
+
+        if(tipo ==6)
+        {
+            FestAplication application= (FestAplication)getApplication();
+            this.festividades= application.getPlace2Repository().getFestByCategory(tipo);
+        }
+
+
+    }
+
+    private void gotoMenuList() {
+        startActivity(new Intent(this,MenuActivity.class));
     }
 }
