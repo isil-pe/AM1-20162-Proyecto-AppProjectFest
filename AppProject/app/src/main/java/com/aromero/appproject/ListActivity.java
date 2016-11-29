@@ -19,7 +19,7 @@ import java.util.List;
  */
 public class ListActivity extends AppCompatActivity {
 
-    private ImageButton btnMenu;
+    private ImageButton btnMenu, btnLogo;
     private ListView lstFest;
     private List<FestividadEntity> festividades;
 
@@ -35,6 +35,7 @@ public class ListActivity extends AppCompatActivity {
 
     private void app() {
         btnMenu = (ImageButton) findViewById(R.id.btnMenu);
+        btnLogo = (ImageButton) findViewById(R.id.btnLogo);
         ui();
         events();
     }
@@ -59,6 +60,13 @@ public class ListActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 gotoMenuList();
+            }
+        });
+
+        findViewById(R.id.btnLogo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoHome();
             }
         });
     }
@@ -130,5 +138,9 @@ public class ListActivity extends AppCompatActivity {
 
     private void gotoMenuList() {
         startActivity(new Intent(this,MenuActivity.class));
+    }
+
+    private void gotoHome() {
+        startActivity(new Intent(this,PrincipalActivity.class));
     }
 }

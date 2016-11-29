@@ -17,7 +17,7 @@ import com.aromero.appproject.storage.Menu;
  */
 public class MenuActivity extends Activity {
 
-    private ImageButton btnMenu;
+    private ImageButton btnMenu, btnLogo;
     private String[] mStrings = Menu.sMenuStrings;
     private int  tipo = 0;
     private ListView lvMenu;
@@ -79,6 +79,7 @@ public class MenuActivity extends Activity {
 
     private void app() {
         btnMenu = (ImageButton) findViewById(R.id.btnMenu);
+        btnLogo = (ImageButton) findViewById(R.id.btnLogo);
         events();
     }
 
@@ -88,6 +89,13 @@ public class MenuActivity extends Activity {
             @Override
             public void onClick(View v) {
                 gotoMenuList();
+            }
+        });
+
+        findViewById(R.id.btnLogo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoHome();
             }
         });
 
@@ -104,6 +112,11 @@ public class MenuActivity extends Activity {
     /*private void gotoFCivicas() {
         startActivity(new Intent(this,FiestasCivicasActivity.class));
     }*/
+
+    private void gotoHome() {
+        startActivity(new Intent(this,PrincipalActivity.class));
+    }
+
     private void gotoList() {
         //startActivity(new Intent(this,ListActivity.class));
         Intent intent = new Intent(this, ListActivity.class);

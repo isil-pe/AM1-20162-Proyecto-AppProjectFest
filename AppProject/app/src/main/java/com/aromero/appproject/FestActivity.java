@@ -1,5 +1,6 @@
 package com.aromero.appproject;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.StrictMode;
 import android.support.v7.app.AppCompatActivity;
@@ -26,7 +27,7 @@ public class FestActivity extends AppCompatActivity {
     private TextView tviClima;
     private TextView tviAltitud;
     private FestividadEntity festividades;
-    private ImageButton btnAdd, btnMenu;
+    private ImageButton btnAdd, btnMenu,btnLogo;
 
     private int foto;
     private String nombre, desc, fecha, lugar, clima,altitud;
@@ -40,10 +41,6 @@ public class FestActivity extends AppCompatActivity {
         extras();
         ui();
         populate();
-
-
-
-
     }
 
     private void extras() {
@@ -66,6 +63,7 @@ public class FestActivity extends AppCompatActivity {
         tviAltitud= (TextView) findViewById(R.id.tviAltitud);
         btnAdd = (ImageButton) findViewById(R.id.btnAdd);
         btnMenu = (ImageButton) findViewById(R.id.btnMenu);
+        btnLogo = (ImageButton) findViewById(R.id.btnLogo);
 
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -74,9 +72,22 @@ public class FestActivity extends AppCompatActivity {
                 //gotoMain();
             }
         });
+
+        findViewById(R.id.btnMenu).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoMenuList();
+            }
+        });
+
+        findViewById(R.id.btnLogo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoHome();
+                gotoMain();
+            }
+        });
     }
-
-
 
     private void populate() {
         if(festividades==null)return;
@@ -115,6 +126,14 @@ public class FestActivity extends AppCompatActivity {
         FestividadEntity festEntity= new FestividadEntity(festId,nombre,foto,desc,fecha,lugar,clima,altitud,6);
 
         application.getPlaceRepository().addFestividad(festEntity);
+    }
+
+    private void gotoMenuList() {
+        startActivity(new Intent(this,MenuActivity.class));
+    }
+
+    private void gotoHome() {
+        startActivity(new Intent(this,PrincipalActivity.class));
     }
 
     private void gotoMain() {

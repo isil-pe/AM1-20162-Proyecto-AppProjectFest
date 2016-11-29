@@ -30,7 +30,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/black"
                 android:id="@+id/btnLogo"
-                android:src="@drawable/marca_peru"
+                android:src="@drawable/home"
                 android:layout_centerVertical="true"
                 />
 

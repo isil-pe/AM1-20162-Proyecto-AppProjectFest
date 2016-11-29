@@ -23,7 +23,7 @@
                 android:layout_height="wrap_content"
                 android:background="@color/black"
                 android:id="@+id/btnLogo"
-                android:src="@drawable/marca_peru"
+                android:src="@drawable/home"
                 android:layout_centerVertical="true"
                 />
 
@@ -60,9 +60,7 @@
         android:orientation="vertical"
         android:background="#ffffff"
         android:padding="10dp"
-
-        android:layout_marginBottom="12dp"
-        android:layout_marginTop="10dp">
+        android:layout_marginTop="1dp">
 
         <TextView
             android:layout_width="wrap_content"
@@ -71,14 +69,14 @@
             android:textColor="#000000"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:layout_marginBottom="10dp"
+            android:layout_marginBottom="5dp"
             />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Nombre"
-            android:textColor="#D1512F"
+            android:textColor="@color/cardview_dark_background"
             android:textSize="15sp"
             android:layout_marginBottom="10dp"
             android:id="@+id/tviNombre" />
@@ -89,8 +87,6 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="8dp"
-        android:layout_marginRight="16dp"
         android:minHeight="200dp"
         android:scaleType="centerCrop"
         android:id="@+id/iviPlace"/>
@@ -105,24 +101,23 @@
             android:orientation="vertical"
             android:background="#ffffff"
             android:padding="10dp"
-            android:layout_marginLeft="8dp"
-            android:layout_marginRight="16dp"
             android:layout_marginBottom="16dp">
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Descripcion"
-                android:textColor="#000000"
-                android:textSize="20sp"
-                android:layout_marginBottom="10dp"
+                android:text="Descripción"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginBottom="5dp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="descripcion"
-                android:textColor="#D1512F"
+                android:textColor="@color/cardview_dark_background"
                 android:layout_marginBottom="10dp"
                 android:textSize="15sp"
                 android:id="@+id/tviDesc" />
@@ -139,19 +134,19 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Fecha"
-                    android:textColor="#000000"
+                    android:text="Fecha:"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:textSize="20sp"
-
                     />
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="fecha"
-                    android:textColor="#D1512F"
+                    android:textColor="@color/cardview_dark_background"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:textSize="15sp"
@@ -172,19 +167,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Lugar"
-                android:textColor="#000000"
+                android:text="Lugar:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
-                android:textSize="20sp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="lugar"
-                android:textColor="#D1512F"
+                android:textColor="@color/cardview_dark_background"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:textSize="15sp"
@@ -206,19 +202,20 @@
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="Clima"
-                android:textColor="#000000"
+                android:text="Clima:"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:textSize="15sp"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:layout_marginRight="10dp"
-                android:textSize="20sp"
                 />
 
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Nombre"
-                android:textColor="#D1512F"
+                android:textColor="@color/cardview_dark_background"
                 android:layout_marginBottom="10dp"
                 android:layout_marginTop="10dp"
                 android:textSize="15sp"
@@ -242,19 +239,20 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Altitud"
-                    android:textColor="#000000"
+                    android:text="Altitud:"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    android:textSize="15sp"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:layout_marginRight="10dp"
-                    android:textSize="20sp"
                     />
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Altitud"
-                    android:textColor="#D1512F"
+                    android:textColor="@color/cardview_dark_background"
                     android:layout_marginBottom="10dp"
                     android:layout_marginTop="10dp"
                     android:textSize="15sp"

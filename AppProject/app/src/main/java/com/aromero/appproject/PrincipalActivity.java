@@ -15,7 +15,7 @@ import android.widget.Toast;
  */
 public class PrincipalActivity extends Activity {
 
-    private ImageButton btnMenu, btnFCivicas, btnFDepartamento;
+    private ImageButton btnMenu, btnFCivicas, btnFDepartamento, btnLogo;
     int tipo = 0;
 
     @Override
@@ -30,6 +30,7 @@ public class PrincipalActivity extends Activity {
         btnMenu = (ImageButton) findViewById(R.id.btnMenu);
         btnFCivicas = (ImageButton) findViewById(R.id.btnFCivicas);
         btnFDepartamento = (ImageButton) findViewById(R.id.btnFDepartamento);
+        btnLogo = (ImageButton) findViewById(R.id.btnLogo);
         events();
     }
 
@@ -41,6 +42,13 @@ public class PrincipalActivity extends Activity {
             @Override
             public void onClick(View v) {
                 gotoMenuList();
+            }
+        });
+
+        findViewById(R.id.btnLogo).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                gotoHome();
             }
         });
 
@@ -97,6 +105,10 @@ public class PrincipalActivity extends Activity {
         startActivity(new Intent(this,MenuActivity.class));
     }
 
+    private void gotoHome() {
+        startActivity(new Intent(this,PrincipalActivity.class));
+    }
+
     private void gotoList() {
         //startActivity(new Intent(this,ListActivity.class));
         Intent intent = new Intent(PrincipalActivity.this, ListActivity.class);
@@ -104,9 +116,7 @@ public class PrincipalActivity extends Activity {
         startActivity(intent);
     }
 
-    private void gotoFCivicas() {
-        startActivity(new Intent(this,FiestasCivicasActivity.class));
-    }
+
 }
 
 

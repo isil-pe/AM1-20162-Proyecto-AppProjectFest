@@ -19,7 +19,7 @@
 
         <TextView
             android:layout_width="match_parent"
-            android:layout_weight="0.2"
+            android:layout_weight="0.3"
             android:layout_height="0dp"
             tools:text="Festividad"
             android:textSize="15sp"
@@ -41,10 +41,9 @@
                 android:layout_height="wrap_content"
                 tools:text="Descripcion"
                 android:textSize="15sp"
-                android:textColor="#D1512F"
+                android:textColor="@color/black"
                 android:id="@+id/tviDesc"
                 android:layout_weight="1"
-
                 />
 
             <ImageView
@@ -52,7 +51,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:adjustViewBounds="true"
-                android:src="@drawable/f_civicas"
+                android:src="@drawable/fest11_200x200"
                 android:visibility="gone"
                 android:id="@+id/iviFoto" />
 
@@ -74,7 +73,7 @@
                 android:gravity="left"
                 tools:text="Fecha"
                 android:textSize="15sp"
-                android:textColor="#000000"
+                android:textColor="@color/cardview_dark_background"
                 android:id="@+id/tviFecha" />
 
 
@@ -96,10 +95,9 @@
                 android:layout_height="wrap_content"
                 tools:text="Lugar"
                 android:gravity="right"
-                android:textColor="#000000"
+                android:textColor="@color/cardview_dark_background"
                 android:textSize="15sp"
                 android:id="@+id/tviLugar" />
-
 
         </LinearLayout>
 

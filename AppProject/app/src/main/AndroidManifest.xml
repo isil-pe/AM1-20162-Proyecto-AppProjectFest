@@ -11,8 +11,6 @@
         <activity android:name=".RegistroActivity"/>
         <activity android:name=".PrincipalActivity"/>
         <activity android:name=".MenuActivity"/>
-        <activity android:name=".FiestasCivicasActivity" />
-        <activity android:name=".DetalleActivity"/>
         <activity android:name=".FestActivity"/>
         <activity android:name=".ListActivity"/>
         <activity android:name=".MainActivity">
