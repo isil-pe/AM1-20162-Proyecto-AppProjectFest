@@ -50,7 +50,7 @@ public class FestRepository {
                         " en América del Sur. Para homenajear y conmemorar a sus héroes, se " +
                         "desarrollan una serie de eventos donde destacan actividades deportivas y " +
                         "exposiciones.",
-                "Del 4 al 9 de diciembre del 2016","Ayacucho","Templado","2,746 m.s.n.m.",1);
+                "Del 4 al 9 de diciembre","Ayacucho","Templado","2,746 m.s.n.m.",1);
 
         FestividadEntity festividad5= new FestividadEntity(5,"Homenaje a los Defensores del Alto de la Alianza",
                 R.drawable.fest19_200x200,
@@ -70,7 +70,7 @@ public class FestRepository {
                         "paseada al ritmo de trece comparsas a pocos metros del lago Titicaca, " +
                         "además de ir acompañada de danzantes con trajes de luces y bandas" +
                         " bolivianas de la ciudad de Copacabana.",
-                "8 de noviembre del 2016","Puno","Templado","3.826 m.s.n.m.",2);
+                "8 de noviembre","Puno","Templado","3.826 m.s.n.m.",2);
 
         FestividadEntity festividad7= new FestividadEntity(7,"Santísima Virgen del Rosario 'Mama Huarin'”",
                 R.drawable.fest20_200x200,
@@ -80,7 +80,7 @@ public class FestRepository {
                         " Rosario, también conocida como “Mama Huarina”. Este acto de fe es " +
                         "celebrado en el mes de octubre, donde las danzas y el fervor se" +
                         " combinan con lo mejor de su historia y tradición.",
-                "Del 6 al 9 de octubre del 2016","Ancash","","3.826 m.s.n.m.",2);
+                "Del 6 al 9 de octubre","Ancash","","3.826 m.s.n.m.",2);
 
         FestividadEntity festividad8= new FestividadEntity(8,"Fiesta Patronal Señor de Gualamita",
                 R.drawable.fest21_200x200,
@@ -91,7 +91,7 @@ public class FestRepository {
                         "cultural “Hatún Luya”, albazo (tradicional inicio de las celebraciones del " +
                         "día), serenatas y fuegos artificiales, todas estas actividades en honor al" +
                         " Señor de Gualamita patrono de la región Amazonas.",
-                "Del 1 al 14 de septiembre del 2016","Amazonas","Templado","",2);
+                "Del 1 al 14 de septiembre","Amazonas","Templado","",2);
 
         FestividadEntity festividad9= new FestividadEntity(9,"Fiesta Mayor del Señor de Ánimas de Apurímac",
                 R.drawable.fest22_200x200,
@@ -101,7 +101,7 @@ public class FestRepository {
                         "esta localidad se ve reflejado en las peregrinaciones, donde una gran" +
                         " cantidad de personas salen en procesión a las calles principales para " +
                         "acompañar en su recorrido a la sagrada imagen. ",
-                "Del 17 de julio al 5 de agosto del 2015","Apurimac","Templado","3.826 m.s.n.m.",2);
+                "Del 17 de jul al 5 de ago","Apurimac","Templado","3.826 m.s.n.m.",2);
 
 
         FestividadEntity festividad10= new FestividadEntity(10,"Virgen del Carmen de Pisac",
@@ -110,23 +110,23 @@ public class FestRepository {
                         "en Pisac, Cusco. Este homenaje a la virgen es una de las expresiones " +
                         "más memorables de este pueblo, quienes tienen en cuenta el mínimo " +
                         "detalle para realizarlo.",
-                "Del 15 al 18 de julio del 2016","Cusco","","3.826 m.s.n.m.",2);
+                "Del 15 al 18 de julio","Cusco","","3.826 m.s.n.m.",2);
 
         //Fiestas DEPARTAMENTO
         FestividadEntity festividad11= new FestividadEntity(11,"Aniv. de Puno",
-                R.drawable.fest11_200x200,
+                R.drawable.fest3_200x200,
                 "Puno, conocida también como “La Ciudad de Plata”, está de fiesta y celebra el" +
                         " 348 aniversario de su creación política. Es por ello que las autoridades" +
                         " de la región han organizado una serie de actividades en las que " +
                         "participaran visitantes y pobladores de toda la región.",
-                "Del 1 al 10 de noviembre del 2016","Puno","Lluvia","3,827 m.s.n.m.",3);
+                "Del 1 al 10 de noviembre","Puno","Lluvia","3,827 m.s.n.m.",3);
 
         FestividadEntity festividad12= new FestividadEntity(12,"Seminario Turístico Puno Ciudad del Lago",
                 R.drawable.fest24_200x200,
                 "El seminario turístico “Puno Ciudad del Lago”, se realizará el 24 de" +
                         " julio en el Hotel San Agustín Plaza, ubicado en la avenida Sol 594, en " +
                         "Cusco, desde las 16:00 a 18:30 horas.",
-                "24 de julio del 2015","Puno","","",3);
+                "24 de julio","Puno","","",3);
 
         FestividadEntity festividad13= new FestividadEntity(13,"Aniversario de Ilo",
                 R.drawable.fest25_200x200,
@@ -136,7 +136,7 @@ public class FestRepository {
                         " programado realizar el “Corso de la amistad”, actividad que reúne a un" +
                         " colorido grupo de personas que presentarán lo más resaltante de la" +
                         " cultura de Ilo.",
-                "26 de mayo del 2016","Moquegua","Templado","",3);
+                "26 de mayo","Moquegua","Templado","",3);
 
         FestividadEntity festividad14= new FestividadEntity(14,"Aniversario de la provincia de Huancayo",
                 R.drawable.fest26_200x200,
@@ -144,7 +144,7 @@ public class FestRepository {
                         " Creación Política como provincia. Para ello, las autoridades " +
                         "locales, regionales y nacionales han organizado una serie de actividades" +
                         " para festejar el aniversario de la ciudad centro más importante del Perú.",
-                "16 de noviembre del 2016","Junin","Frío y lluvioso","3.249 m.s.n.m.",3);
+                "16 de noviembre","Junin","Frío y lluvioso","3.249 m.s.n.m.",3);
 
         FestividadEntity festividad15= new FestividadEntity(15,"Aniversario de la Provincia de Puerto Inca",
                 R.drawable.fest27_200x200,
@@ -153,7 +153,7 @@ public class FestRepository {
                         "diversas actividades, entre las que destacan desfiles cívicos, " +
                         "competencias deportivas, almuerzos y una peculiar fiesta popular " +
                         "en los ambientes del Palacio Municipal.",
-                "19 de noviembre del 2016","Huánuco","Templado","1.894 m.s.n.m.",3);
+                "19 de noviembre","Huánuco","Templado","1.894 m.s.n.m.",3);
 
         //Fiestas MESES
         FestividadEntity festividad16= new FestividadEntity(16,"Aniversario de la fundación de Huancavelica",
@@ -162,19 +162,19 @@ public class FestRepository {
                         " 31 de julio. Al día siguiente se llevará a cabo a una mini maratón, y el" +
                         " día principal, 04 de agosto, se realizará la escenificación de la" +
                         " fundación española de Huancavelica (con más de 480 actores).",
-                "4 de agosto del 2016","Huancavelica","Templado","",4);
+                "4 de agosto","Huancavelica","Templado","",4);
 
         FestividadEntity festividad17= new FestividadEntity(17,"Fiesta de San Juan Bautista",
                 R.drawable.fest29_200x200,
                 "Celebración en honor a San Juan Bautista, manifestaciones religiosas" +
                         " presentaciones folklóricas, y presentación de platos típicos.",
-                "24 de junio del 2016","Lima","Templado","",4);
+                "24 de junio","Lima","Templado","",4);
 
         FestividadEntity festividad18= new FestividadEntity(18,"Fiesta Patronal del Señor de Chacos",
                 R.drawable.fest30_200x200,
                 "Peregrinación de fieles y devotos, feria Artesanal y gastronómica, presentación " +
                         "de música y danza y quema de castillos y fuegos artificiales.",
-                "Del 1 al 5 de mayo del 2016","Huánuco","Templado","94 m.s.n.m.",4);
+                "Del 1 al 5 de mayo","Huánuco","Templado","94 m.s.n.m.",4);
 
         FestividadEntity festividad19= new FestividadEntity(19,"Festival del Choclo y la Chirimoya",
                 R.drawable.fest31_200x200,
@@ -184,7 +184,7 @@ public class FestRepository {
                         " palta\", donde se expondrán los mejores productos de cosechas de la" +
                         " capital ecológica del Perú, así mismo se mostrará la diversidad " +
                         "culinaria huarina, presentadas por los mejores chef de la zona de los conchucos.",
-                "Del 18 al 19 de mayo del 2016","Ancash","Templado","94 m.s.n.m.",4);
+                "Del 18 al 19 de mayo","Ancash","Templado","94 m.s.n.m.",4);
 
         FestividadEntity festividad20= new FestividadEntity(20,"Aniversario de la provincia de Chanchamayo",
                 R.drawable.fest32_200x200,
@@ -195,7 +195,7 @@ public class FestRepository {
                         " se elegirá a la Reina Nativo Tsinane. Esta festividad será un júbilo," +
                         " donde podrán degustar de platillos típicos de la ciudad y comprar" +
                         " hermosas piezas artesanales.",
-                "24 de septiembre del 2016","Junin","Templado","94 m.s.n.m.",4);
+                "24 de septiembre","Junin","Templado","94 m.s.n.m.",4);
 
         //Fiestas GASTRONOMICA
         FestividadEntity festividad21= new FestividadEntity(21,"El Chaufa más grande",
@@ -203,7 +203,7 @@ public class FestRepository {
                 "de noviembre en la Alameda Chabuca Granda (altura cda. 1 del Jr. Camaná) del " +
                 "Centro Histórico de Lima, en la actividad organizada por la Comuna Metropolitana, " +
                 "con el apoyo de los principales restaurantes del Barrio Chino, del Centro Histórico, AHORA Huaral, y Cenfotur.",
-                "24 de noviembre del 2016","Lima","Árido y Semicálido","3 m.s.n.m.",5);
+                "24 de noviembre","Lima","Árido y Semicálido","3 m.s.n.m.",5);
 
         FestividadEntity festividad22 = new FestividadEntity(22,"Festival del Camarón",
                 R.drawable.fest14_200x200,"Para los amantes del camarón, en la provincia Castilla de" +
@@ -211,7 +211,7 @@ public class FestRepository {
                 " Además, se realizan catas de diversos piscos y vinos tradicionales desde la época colonial." +
                 "Todos los asistentes disfrutarán del concurso de platos típicos a base de camarón " +
                 "como: chupe de camarones, tortilla y chicharrón de camarón.",
-                "Del 25 de noviembre al 2 de diciembre del 2016","Arequipa","Semiárido y templado","9 m.s.n.m.",5);
+                "Del 25 de nov al 2 de dic","Arequipa","Semiárido y templado","9 m.s.n.m.",5);
 
         FestividadEntity festividad23= new FestividadEntity(23,"Feria salchicha huachana",
                 R.drawable.fest15_200x200,"Huacho está de fiesta y celebrará su aniversario 142 como" +
@@ -219,14 +219,14 @@ public class FestRepository {
                 "salchicha huachana. El evento estará lleno de sorpresas y exhibiciones de platos " +
                 "típicos innovadores como: ceviche de trucha, tacu tacu con salchicha, pizza de " +
                 "salchicha, sopa huachana y ceviche de pato.",
-                "Del 12 al 13 de noviembre del 2016","Lima","Árido y semicálido","3 m.s.n.m.",5);
+                "Del 12 al 13 de noviembre","Lima","Árido y semicálido","3 m.s.n.m.",5);
 
         FestividadEntity festividad24= new FestividadEntity(24,"I Feria Internacional de gastronomía Sabe a Pimentel",
                 R.drawable.fest16_200x200,"En el marco del aniversario de la creación política del" +
                 " distrito de Pimentel en Chiclayo, se realizará la I Feria Internacional de " +
                 "Gastronomía “Sabe a Pimentel”, la cual busca posicionar a la región como destino" +
                 " culinario del Perú, además de fomentar la identidad cultural.",
-                "Del 28 al 30 de octubre del 2016","Lambayeque","Templado.","4 m.s.n.m.",5);
+                "Del 28 al 30 de octubre","Lambayeque","Templado.","4 m.s.n.m.",5);
 
         FestividadEntity festividad25= new FestividadEntity(25,"Festival Regional del Plátano",
                 R.drawable.fest17_200x200,"La Municipalidad Provincial de Padre Abad, alista la" +
@@ -235,13 +235,13 @@ public class FestRepository {
                 " de campo la presentación del Tacacho más Grande y el establecimiento de la Ruta" +
                 " turística del Platano, con la participación de las autoridades provinciales, y" +
                 " representantes de las instituciones públicas y privadas.",
-                "Del 4 al 5 de septiembre del 2016","Ucayali","","",5);
+                "Del 4 al 5 de septiembre","Ucayali","","",5);
 
         //Fiestas FAVORITOS
-        FestividadEntity festividad26= new FestividadEntity(26,"148° Aniversario de Creación Política y 55° Semana Turística de Chincha",
+        /*FestividadEntity festividad26= new FestividadEntity(26,"148° Aniversario de Creación Política y 55° Semana Turística de Chincha",
                 R.drawable.fest11_200x200,
                 "¡La cuna del folclore afroperuano está de fiesta! La provincia de Chincha cumple 148° años de su creación política, en el marco de la 55° Semana turística de la provincia, donde se ofrecerán una serie de actividades que  reunirán tanto a pobladores como a turistas.",
-                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",6);
+                "Del 17 al 24 de octubre","Ica","Templado","94 m.s.n.m.",6);*/
 
         festividad.add(festividad1);
         festividad.add(festividad2);
@@ -268,7 +268,7 @@ public class FestRepository {
         festividad.add(festividad23);
         festividad.add(festividad24);
         festividad.add(festividad25);
-        festividad.add(festividad26);
+        //festividad.add(festividad26);
 
     }
 

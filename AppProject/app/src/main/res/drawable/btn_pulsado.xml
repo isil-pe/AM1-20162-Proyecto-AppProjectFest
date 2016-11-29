@@ -4,10 +4,10 @@
 
     <item
         android:state_pressed="true"
-        android:drawable="@drawable/list_img"
+        android:drawable="@drawable/favoritos2"
         />
 
-    <item  android:drawable="@drawable/marca_peru"
+    <item  android:drawable="@drawable/favoritos1"
         />
 
 </selector>

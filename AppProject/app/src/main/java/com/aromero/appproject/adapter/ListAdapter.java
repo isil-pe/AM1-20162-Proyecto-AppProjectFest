@@ -68,8 +68,6 @@ public class ListAdapter extends BaseAdapter {
             if(descripcion.length()>=DESCLMAX) descripcion= descripcion.substring(0,DESCLMAX)+"...";
 
             //int ranking = entry.getPhoto();
-            //int review=entry.getReviews();
-            //int distancia= entry.getDistancia();
             String fecha=entry.getFecha();
             String lugar=entry.getLugar();
             String clima=entry.getClima();
@@ -136,14 +134,10 @@ public class ListAdapter extends BaseAdapter {
 
 
             // holder.iviPlace.setImageResource(entry.getPhoto());
-            //holder.tviDesc1.setText(""+review + " REVIEWS");
-            //holder.tviDesc2.setText(""+distancia + " m");
             holder.tviFecha.setText(fecha);
             holder.tviLugar.setText(lugar);
             holder.tviClima.setText(clima);
             holder.tviAltitud.setText(altitud);
-
-
 
             //holder.tviTitle.setBackgroundColor(Color.parseColor(entry.getHeaderColor()));
         }

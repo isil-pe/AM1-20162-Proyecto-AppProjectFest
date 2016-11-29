@@ -52,6 +52,17 @@
             android:id="@+id/txtPassword2"
             />
 
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Confirmar Password"
+            android:textColorHint="@color/grayLithg"
+            android:inputType="textPassword"
+            android:textSize="25sp"
+            android:layout_marginBottom="5dp"
+            android:id="@+id/txtPassword3"
+            />
+
         <Button
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
