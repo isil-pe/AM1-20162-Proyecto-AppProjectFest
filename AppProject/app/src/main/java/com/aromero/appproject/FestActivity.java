@@ -9,6 +9,7 @@ import android.view.Window;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.aromero.appproject.model.FestividadEntity;
 
@@ -29,7 +30,7 @@ public class FestActivity extends AppCompatActivity {
     private FestividadEntity festividades;
     private ImageButton btnAdd, btnMenu,btnLogo;
 
-    private int foto;
+    private int foto, photo;
     private String nombre, desc, fecha, lugar, clima,altitud;
 
     @Override
@@ -69,6 +70,7 @@ public class FestActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 addNote();
+
                 //gotoMain();
             }
         });
@@ -96,10 +98,11 @@ public class FestActivity extends AppCompatActivity {
         tviFecha.setText(festividades.getFecha());
         tviLugar.setText(festividades.getLugar());
         iviFoto.setImageResource(festividades.getPhoto());
-        //tviFecha.setText(""+(restaurantes.getReviews())+" Reviews");
-        //tviLugar.setText(""+(restaurantes.getDistancia())+" m");
+        photo=festividades.getPhoto();
         tviClima.setText(festividades.getClima());
         tviAltitud.setText(festividades.getAltitud());
+
+
     }
 
     private void addNote() {
@@ -107,12 +110,13 @@ public class FestActivity extends AppCompatActivity {
         FestAplication application= (FestAplication)getApplication();
 
         nombre= tviNombre.getText().toString().trim();
-        foto = R.drawable.aniv_callao;
+        foto = photo;
         desc= tviDesc.getText().toString().trim();
         fecha= tviFecha.getText().toString().trim();
         lugar= tviLugar.getText().toString().trim();
         clima= tviClima.getText().toString().trim();
         altitud= tviAltitud.getText().toString().trim();
+
 
         FestividadEntity last= application.getPlaceRepository().lastFestividades();
         int festId;
@@ -126,7 +130,11 @@ public class FestActivity extends AppCompatActivity {
         FestividadEntity festEntity= new FestividadEntity(festId,nombre,foto,desc,fecha,lugar,clima,altitud,6);
 
         application.getPlaceRepository().addFestividad(festEntity);
+
+        showItem(nombre);
     }
+
+
 
     private void gotoMenuList() {
         startActivity(new Intent(this,MenuActivity.class));
@@ -134,6 +142,11 @@ public class FestActivity extends AppCompatActivity {
 
     private void gotoHome() {
         startActivity(new Intent(this,PrincipalActivity.class));
+    }
+
+    private void showItem(String value) {
+
+        Toast.makeText(this,"Se agrego a favoritos "+value,Toast.LENGTH_SHORT).show();
     }
 
     private void gotoMain() {

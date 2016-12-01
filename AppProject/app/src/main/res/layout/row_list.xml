@@ -117,6 +117,7 @@
             android:visibility="gone"
             android:id="@+id/tviAltitud" />
 
+
     </LinearLayout>
 
     <FrameLayout

@@ -47,31 +47,37 @@ public class MenuActivity extends Activity {
                 {
                     tipo = 1;
                     gotoList();
+                    gotoMain();
                 }
                 if(position==1)
                 {
                     tipo = 2;
                     gotoList();
+                    gotoMain();
                 }
                 if(position==2)
                 {
                     tipo = 3;
                     gotoList();
+                    gotoMain();
                 }
                 if(position==3)
                 {
                     tipo = 4;
                     gotoList();
+                    gotoMain();
                 }
                 if(position==4)
                 {
                     tipo = 5;
                     gotoList();
+                    gotoMain();
                 }
                 if(position==5)
                 {
                     tipo = 6;
                     gotoList();
+                    gotoMain();
                 }
             }
         });
@@ -103,7 +109,7 @@ public class MenuActivity extends Activity {
 
     private void showItem(String value) {
 
-        Toast.makeText(this,"item "+value,Toast.LENGTH_SHORT).show();
+        Toast.makeText(this,""+value,Toast.LENGTH_SHORT).show();
     }
 
     private void gotoMenuList() {
@@ -122,5 +128,9 @@ public class MenuActivity extends Activity {
         Intent intent = new Intent(this, ListActivity.class);
         intent.putExtra("tipo", tipo);
         startActivity(intent);
+    }
+
+    private void gotoMain() {
+        finish();
     }
 }
