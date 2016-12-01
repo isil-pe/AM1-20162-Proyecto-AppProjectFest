@@ -18,7 +18,7 @@ import java.util.List;
  */
 public class ListAdapter extends BaseAdapter {
 
-    private int DESCLMAX=30;
+    private int DESCLMAX=45;
     private Context context;
     private List<FestividadEntity> festividades;
 

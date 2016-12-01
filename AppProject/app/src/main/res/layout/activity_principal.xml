@@ -39,6 +39,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/red"
                         android:text="@string/tipo1"
                         android:textSize="20sp"
                         android:textAlignment="center"
@@ -62,6 +63,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/red"
                         android:text="@string/tipo2"
                         android:textSize="20sp"
                         android:textAlignment="center"
@@ -94,6 +96,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/red"
                         android:text="@string/tipo3"
                         android:textSize="20sp"
                         android:textAlignment="center"
@@ -117,6 +120,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/red"
                         android:text="@string/tipo4"
                         android:textSize="20sp"
                         android:textAlignment="center"
@@ -147,6 +151,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/red"
                         android:text="@string/tipo5"
                         android:textSize="20sp"
                         android:textAlignment="center"
@@ -170,6 +175,7 @@
                     <TextView
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
+                        android:textColor="@color/red"
                         android:text="@string/tipo6"
                         android:textSize="20sp"
                         android:textAlignment="center"

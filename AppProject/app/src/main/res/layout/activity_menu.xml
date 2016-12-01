@@ -3,12 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/red"
 
     tools:context="com.aromero.appproject.MenuActivity">
     <ListView
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_marginTop="60dp"
+        android:background="@color/red"
+        android:layout_marginLeft="10dp"
         android:id="@+id/lvMenu"/>
 
     <LinearLayout

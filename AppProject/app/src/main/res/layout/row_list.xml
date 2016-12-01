@@ -23,8 +23,8 @@
             android:layout_height="0dp"
             tools:text="Festividad"
             android:textSize="15sp"
+            android:textColor="@color/red"
             android:textStyle="bold"
-            android:textColor="#000000"
             android:id="@+id/tviNombre" />
 
 
@@ -41,7 +41,7 @@
                 android:layout_height="wrap_content"
                 tools:text="Descripcion"
                 android:textSize="15sp"
-                android:textColor="@color/black"
+                android:textColor="@color/grayLithg"
                 android:id="@+id/tviDesc"
                 android:layout_weight="1"
                 />
@@ -72,8 +72,8 @@
                 android:layout_height="wrap_content"
                 android:gravity="left"
                 tools:text="Fecha"
-                android:textSize="15sp"
-                android:textColor="@color/cardview_dark_background"
+                android:textSize="12sp"
+                android:textColor="@color/grayLithg"
                 android:id="@+id/tviFecha" />
 
 
@@ -95,8 +95,8 @@
                 android:layout_height="wrap_content"
                 tools:text="Lugar"
                 android:gravity="right"
-                android:textColor="@color/cardview_dark_background"
-                android:textSize="15sp"
+                android:textColor="@color/red"
+                android:textSize="12sp"
                 android:id="@+id/tviLugar" />
 
         </LinearLayout>

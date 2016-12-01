@@ -40,8 +40,8 @@ public class MenuActivity extends Activity {
         lvMenu.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int position, long l) {
-                String value= String.valueOf(adapterView.getAdapter().getItem(position))+
-                        " " +String.valueOf(position);
+                String value= String.valueOf(adapterView.getAdapter().getItem(position));
+                        //+" " +String.valueOf(position);
                 showItem(value);
                 if(position==0)
                 {

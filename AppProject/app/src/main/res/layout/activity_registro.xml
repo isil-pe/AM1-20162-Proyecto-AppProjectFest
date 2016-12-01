@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_weight="0.2"
         android:layout_height="0dp"
-        android:text="Bienvenido"
+        android:text="Registro"
         android:textSize="40sp"
         android:gravity="center"
         />
@@ -85,7 +85,7 @@
         android:orientation="horizontal"
         android:gravity="center"
         android:padding="10dp"
-        android:background="@color/fondoFooter"
+        android:background="@color/grayLithg"
         android:layout_alignParentBottom="true">
 
         <TextView

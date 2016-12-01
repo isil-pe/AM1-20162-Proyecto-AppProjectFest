@@ -5,7 +5,8 @@
     android:layout_height="wrap_content"
     android:textAppearance="?android:attr/textAppearanceListItemSmall"
     android:gravity="center_vertical|left"
-    android:textColor="@color/textLista"
+    android:layout_marginLeft="10dp"
+    android:textColor="@color/white"
     android:padding="8dp"
     android:text="Hello List"
     />

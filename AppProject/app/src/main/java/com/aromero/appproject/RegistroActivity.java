@@ -15,7 +15,7 @@ import java.util.regex.Pattern;
  */
 public class RegistroActivity extends Activity {
 
-    private EditText txtName2, txtEmail2, txtPassword2;
+    private EditText txtName2, txtEmail2, txtPassword2, txtPassword3;
     private Button btnRegistrarse2;
 
     @Override
@@ -30,6 +30,7 @@ public class RegistroActivity extends Activity {
         txtName2 = (EditText) findViewById(R.id.txtName2);
         txtEmail2 = (EditText) findViewById(R.id.txtEmail2);
         txtPassword2 = (EditText) findViewById(R.id.txtPassword2);
+        txtPassword3 = (EditText) findViewById(R.id.txtPassword3);
 
         btnRegistrarse2 = (Button) findViewById(R.id.btnRegistrarse2);
         events();
@@ -42,6 +43,7 @@ public class RegistroActivity extends Activity {
             @Override
             public void onClick(View view) {
                 if (validateFormError()) {
+                    ConfirmarPass();
 
                 }
                 else
@@ -57,6 +59,7 @@ public class RegistroActivity extends Activity {
         String name = txtName2.getText().toString().trim();
         String email = txtEmail2.getText().toString().trim();
         String password = txtPassword2.getText().toString().trim();
+        String cpassword = txtPassword3.getText().toString().trim();
 
         if (name.isEmpty()) {
             txtName2.setError("Campo inválido");
@@ -72,6 +75,10 @@ public class RegistroActivity extends Activity {
         }
         if (password.isEmpty()) {
             txtPassword2.setError("Campo inválido");
+            return false;
+        }
+        if (cpassword.isEmpty()) {
+            txtPassword3.setError("Campo inválido");
             return false;
         }
         if (email.isEmpty()) return false;
@@ -98,5 +105,24 @@ public class RegistroActivity extends Activity {
             return true;
         else
             return false;
+    }
+
+    private boolean ConfirmarPass() {
+        String pass1 = txtPassword2.getText().toString().trim();
+        String pass2 = txtPassword3.getText().toString().trim();
+
+        if (pass1.equals(pass2)) {
+            Toast.makeText(RegistroActivity.this, "Se registro correctamente",
+                    Toast.LENGTH_SHORT).show();
+
+        } else {
+            txtPassword3.setError("La contraseña es diferente");
+            return false;
+        }
+
+        if (pass1.isEmpty()) return false;
+        if (pass2.isEmpty()) return false;
+        return true;
+
     }
 }
