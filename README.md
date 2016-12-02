@@ -33,4 +33,4 @@ Tablas :
 
 ## Diagrama 
 
-![](https://github.com/isil-pe/TemplateProject/blob/master/wireframe.PNG)
+![](https://github.com/isil-pe/AM1-20162-Proyecto-AppProjectFest/blob/master/secuenciaAppFest.jpg)
