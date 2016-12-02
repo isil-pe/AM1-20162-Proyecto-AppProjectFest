@@ -25,11 +25,9 @@ Template para sus proyectos.
     
 ## Base de Datos 
 
-Huarike.db
-
+Fest.db
 Tablas : 
-
-
+![](https://github.com/isil-pe/AM1-20162-Proyecto-AppProjectFest/blob/master/BaseDatos.jpg)
 
 ## Diagrama 
 
